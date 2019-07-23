@@ -10,6 +10,7 @@ div.histo {
 }
 
 div.bar {
+    width: 0;
     background-color: crimson;
     height: 1em;
     margin: 1em 0
