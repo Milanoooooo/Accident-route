@@ -7,3 +7,9 @@ div.histo {
     height: 20em;
     background-color: gray
 }
+
+div.bar {
+    color: crimson;
+    height: 1em;
+    margin: 1em 0
+}
