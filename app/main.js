@@ -4,6 +4,11 @@ console.log('hello', d3);
     try {
         const data = await d3.csv('data/caracteristiques-2017.csv')
         console.log('data', data);
+        const data2 = data.map(d => d['dep']).reduce((acc, n) => {
+            acc[n] = (acc[n] === undefined) ? 1 : acc[n] + 1;
+            return acc;
+        }, {})
+        console.log('data2', data2);
 
         /*Code pour paramétrer la taille des barres, i sera chaque ligne du fichier*/
         const bars = document.querySelectorAll('.bar');
